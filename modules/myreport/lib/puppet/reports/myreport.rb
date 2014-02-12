@@ -8,6 +8,16 @@ A new report processor.
 
   def process
     puts "Hello world!"
+
+    require 'pry'
+    binding.pry
+
+    self.resource_statuses.each do |k,st|
+      st.events.each do |ev|
+        puts ev.message
+        binding.pry
+      end
+    end
   end
 end
 
