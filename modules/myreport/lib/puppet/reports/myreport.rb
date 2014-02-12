@@ -1,3 +1,4 @@
+# file name of this has to match the reporter name
 require 'puppet'
 Puppet::Reports.register_report(:myreport) do
 
